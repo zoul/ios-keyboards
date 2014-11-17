@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>iOS Keyboard Sampler</title>
+    <style>
+        #container {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #preview {
+            width: 100%;
+            display: block;
+        }
+        #controls {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function updatePreview() {
+            function getValue(id) {
+                var select = document.querySelector('select[name="' + id + '"]');
+                return select.options[select.selectedIndex].value;
+            }
+            var model = getValue('model');
+            var orientation = getValue('orientation');
+            var layout = getValue('layout');
+            var baseURL = 'https://raw.githubusercontent.com/zoul/ios-keyboards/master/';
+            var fullURL = baseURL + model + '/' + orientation + '/' + layout + '.png';
+            document.getElementById("preview").src = fullURL;
+        }
+        window.onload = function() {
+            var selects = document.getElementsByTagName('select');
+            for (var i=0; i<selects.length; i++) {
+                var select = selects[i];
+                select.onchange = function() {
+                    updatePreview();
+                };
+            }
+            updatePreview();
+        };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img id="preview">
+        <div id="controls">
+            <select name="model">
+                <option value="iPhone5">iPhone 5</option>
+                <option value="iPhone6">iPhone 6</option>
+                <option value="iPhone6+">iPhone 6 Plus</option>
+            </select>
+            <select name="orientation">
+                <option value="portrait">portrait</option>
+                <option value="landscape">landscape</option>
+            </select>
+            <select name="layout">
+                <option value="UIKeyboardTypeDefault">UIKeyboardTypeDefault</option>
+                <option value="UIKeyboardTypeASCIICapable">UIKeyboardTypeASCIICapable</option>
+                <option value="UIKeyboardTypeNumbersAndPunctuation">UIKeyboardTypeNumbersAndPunctuation</option>
+                <option value="UIKeyboardTypeURL">UIKeyboardTypeURL</option>
+                <option value="UIKeyboardTypeNumberPad">UIKeyboardTypeNumberPad</option>
+                <option value="UIKeyboardTypePhonePad">UIKeyboardTypePhonePad</option>
+                <option value="UIKeyboardTypeNamePhonePad">UIKeyboardTypeNamePhonePad</option>
+                <option value="UIKeyboardTypeEmailAddress">UIKeyboardTypeEmailAddress</option>
+                <option value="UIKeyboardTypeDecimalPad">UIKeyboardTypeDecimalPad</option>
+                <option value="UIKeyboardTypeTwitter">UIKeyboardTypeTwitter</option>
+                <option value="UIKeyboardTypeWebSearch">UIKeyboardTypeWebSearch</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+
