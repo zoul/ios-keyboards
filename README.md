@@ -23,7 +23,7 @@ For a great explanation of the conversion between logical display points and pix
 
 ## Keyboard Layouts
 
-See the images stored in the repository and the `UIKeyboardType` enum:
+See the [interactive HTML sampler](http://htmlpreview.github.io/?https://github.com/zoul/ios-keyboards/blob/master/picker.html) and the `UIKeyboardType` enum:
 
 * `UIKeyboardTypeDefault`
 * `UIKeyboardTypeASCIICapable`
