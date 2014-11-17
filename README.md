@@ -19,6 +19,8 @@ An overview of the layouts and sizes used by the system keyboard in iOS.
 * Portrait 414✕226 points (1242✕678 px)
 * Landscape 736✕162 points (2208✕486 px)
 
+For a great explanation of the conversion between logical display points and pixels see the [http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions](http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions).
+
 ## Keyboard Layouts
 
 See the images stored in the repository and the `UIKeyboardType` enum:
