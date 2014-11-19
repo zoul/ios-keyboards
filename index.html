@@ -26,8 +26,8 @@
             var model = getValue('model');
             var orientation = getValue('orientation');
             var layout = getValue('layout');
-            var baseURL = 'https://raw.githubusercontent.com/zoul/ios-keyboards/master/';
-            var fullURL = baseURL + model + '/' + orientation + '/' + layout + '.png';
+            var baseURL = 'http://zoul.github.io/ios-keyboards';
+            var fullURL = baseURL + '/' + model + '/' + orientation + '/' + layout + '.png';
             document.getElementById("preview").src = fullURL;
         }
         window.onload = function() {
