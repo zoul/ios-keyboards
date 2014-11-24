@@ -1,6 +1,6 @@
 # iOS Keyboard Catalogue
 
-An overview of the layouts and sizes used by the system keyboard in iOS.
+An overview of the layouts and sizes used by the system keyboard in iOS. The repository contains an iOS app that showcases the various keyboard types (see the App folder), and a collection of keyboard images that can be displayed and compared in the [interactive HTML sampler](http://zoul.github.io/ios-keyboards).
 
 ## Keyboard Sizes
 
@@ -21,9 +21,7 @@ An overview of the layouts and sizes used by the system keyboard in iOS.
 
 For a great explanation of the conversion between logical display points and pixels see the [Ultimate Guide to iPhone Resolutions](http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions).
 
-## Keyboard Layouts
-
-See the [interactive HTML sampler](http://zoul.github.io/ios-keyboards) and the `UIKeyboardType` enum:
+## Keyboard Types
 
 * `UIKeyboardTypeDefault`
 * `UIKeyboardTypeASCIICapable`
