@@ -34,17 +34,17 @@ class DataViewController: UIViewController {
     
     func keyboardTypeDescription(type: UIKeyboardType) -> String {
         var names: [UIKeyboardType:String] = [
-            .Default               : "UIKeyboardType.Default",
-            .ASCIICapable          : "UIKeyboardType.ASCIICapable",
-            .EmailAddress          : "UIKeyboardType.EmailAddress",
-            .NamePhonePad          : "UIKeyboardType.NamePhonePad",
-            .NumberPad             : "UIKeyboardType.NumberPad",
-            .DecimalPad            : "UIKeyboardType.DecimalPad",
-            .NumbersAndPunctuation : "UIKeyboardType.NumbersAndPunctuation",
-            .PhonePad              : "UIKeyboardType.PhonePad",
-            .Twitter               : "UIKeyboardType.Twitter",
-            .WebSearch             : "UIKeyboardType.WebSearch",
-            .URL                   : "UIKeyboardType.URL",
+            .Default               : "Default",
+            .ASCIICapable          : "ASCIICapable",
+            .EmailAddress          : "EmailAddress",
+            .NamePhonePad          : "NamePhonePad",
+            .NumberPad             : "NumberPad",
+            .DecimalPad            : "DecimalPad",
+            .NumbersAndPunctuation : "NumbersAndPunctuation",
+            .PhonePad              : "PhonePad",
+            .Twitter               : "Twitter",
+            .WebSearch             : "WebSearch",
+            .URL                   : "URL",
         ]
         return names[type] ?? "Unknown"
     }
