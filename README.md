@@ -4,6 +4,11 @@ An overview of the layouts and sizes used by the system keyboard in iOS. The rep
 
 ## Keyboard Sizes
 
+### iPhone 4
+
+* Portrait 320✕216 points (640✕432 px)
+* Landscape 480✕162 points (960✕324 px)
+
 ### iPhone 5
 
 * Portrait 320✕216 points (640✕432 px)
