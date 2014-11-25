@@ -32,7 +32,7 @@ class DataViewController: UIViewController {
         textField.resignFirstResponder()
     }
     
-    func keyboardTypeDescription(type: UIKeyboardType) -> String {
+    private func keyboardTypeDescription(type: UIKeyboardType) -> String {
         var names: [UIKeyboardType:String] = [
             .Default               : "Default",
             .ASCIICapable          : "ASCIICapable",

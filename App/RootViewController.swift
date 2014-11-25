@@ -21,7 +21,7 @@ class RootViewController: UIViewController, UIPageViewControllerDataSource, UIPa
         view.gestureRecognizers = pageViewController!.gestureRecognizers
     }
 
-    func loadPageViewControllerForIndex(index: Int) -> DataViewController? {
+    private func loadPageViewControllerForIndex(index: Int) -> DataViewController? {
         if (index >= 0 && index <= 10) {
             let dataViewController = storyboard!.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
             dataViewController.keyboardType = UIKeyboardType(rawValue: index)!
