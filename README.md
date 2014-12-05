@@ -39,3 +39,12 @@ For a great explanation of the conversion between logical display points and pix
 * `UIKeyboardTypeDecimalPad`
 * `UIKeyboardTypeTwitter`
 * `UIKeyboardTypeWebSearch`
+
+## Random Design Remarks
+
+* Most keyboard types have two alternate “planes” that can be switched to using special keys – a number plane (the `123` key) and a symbol plane (the `#+=` key).
+* The `UIKeyboardTypeNumbersAndPunctuation` keyboard type is simply the `UIKeyboardTypeDefault` type switched to the number plane by default.
+* The `UIKeyboardTypeURL` and `UIKeyboardTypeEmailAddress` keyboard types have number and symbol planes with different layout and different characters from the rest of the keyboard types.
+* If there is just one keyboard installed, the globe key used for keyboard switching is replaced using an emoji key.
+* The `123` key on the `UIKeyboardTypeNamePhonePad` keyboard leads to a unique phone-pad plane (almost like the `UIKeyboardTypePhonePad` type, only the bottom-left `+*#` key is replaced by a `ABC` key to switch back to the alpha plane).
+* The decimal separator in the `UIKeyboardTypeDecimalPad` keyboard is adjusted according to current locale (as an example, it uses the “`,`” character on a Czech phone).
