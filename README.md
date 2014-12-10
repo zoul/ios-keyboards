@@ -48,3 +48,4 @@ For a great explanation of the conversion between logical display points and pix
 * If there is just one keyboard installed, the globe key used for keyboard switching is replaced using an emoji key.
 * The `123` key on the `UIKeyboardTypeNamePhonePad` keyboard leads to a unique phone-pad plane (almost like the `UIKeyboardTypePhonePad` type, only the bottom-left `+*#` key is replaced by a `ABC` key to switch back to the alpha plane).
 * The decimal separator in the `UIKeyboardTypeDecimalPad` keyboard is adjusted according to current locale (as an example, it uses the “`,`” character on a Czech phone).
+* The `UIKeyboardTypePhonePad` and `UIKeyboardTypeNamePhonePad` currently don’t seem to support keyboard extensions (as of iOS 8.1). Even if the keyboard extension supports the keyboard type, the system uses its own keyboard.
